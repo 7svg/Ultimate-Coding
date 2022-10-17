@@ -234,8 +234,9 @@ a.linkfour{
   margin-left: 13%;
   width: 256px;
   height: 50px;
-  margin-bottom: 1%;
+  margin-bottom: 5px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 #JS_UC_first_demo_button_p{

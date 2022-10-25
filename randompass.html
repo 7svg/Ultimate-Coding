@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password</title>
+    <style>@import url("https://fonts.googlepis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #927dfc;
+    }
+
+    .wrapper{
+        position: relative;
+        max-width: 300px;
+        background: #fff;
+        border-radius: 12px;
+        padding: 30px 25px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    password-box{
+        position: relative;
+        height: 50px;
+    }
+
+    .password-box input{
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+        padding: 0 45px 0 15px;
+        border: 1px solid #aaa;
+        background-color: transparent;
+    }
+
+    .password-box .copy-icon{
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        color: #707070;
+        font-size: 20px;
+        cursor: pointer;
+        transform: translateY(-50%);
+    }
+
+    .copy-icon:hover{
+        color: #826afb;
+    }
+
+    .wrapper .range-box{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .range-box input{
+        width: 100%;
+        height: 5px;
+        accent-color: #826afb;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="password-box">
+            <input type="text" placeholder="Y0URP@SSC0D=" disabled />
+            <i class="uil uil-copy copy-icon"></i>
+        </div>
+        
+        <div class="range-box">
+            <input type="range" min="6" max="16" value="8">
+            <span class="slider-number">8</span>
+        </div>
+
+        <button class="generate-button">Generate Password</button>
+    </div>
+</body>
+</html>

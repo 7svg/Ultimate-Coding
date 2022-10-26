@@ -1,3 +1,5 @@
+// Cookie JavaScript
+
 const cookieContainer = document.querySelector(".cookie-container");
 const cookieButton = document.querySelector(".cookie-btn");
 
